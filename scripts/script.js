@@ -5,7 +5,7 @@ function getComputerChoice() {
     return choices[choice];
 }
 
-function playerSelection() {
+function getPlayerChoice() {
     const choices = ["rock", "scissors", "paper"];
     
     while (true) {
@@ -17,5 +17,19 @@ function playerSelection() {
             }
         }
     }
+}
+
+function playRound(playerSelection, computerSelection) {
+    const rule = {
+        rock: {scissors: 1, paper: -1},
+        scissors: {rock: -1, paper: 1},
+        paper: {rock: 1, scissors: -1}
+    }
+
+    if (playerSelection === computerSelection) {
+        return 0;
+    }
+    
+    return (rule[playerSelection][computerSelection]);
 }
 
