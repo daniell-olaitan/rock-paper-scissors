@@ -80,4 +80,4 @@ function game() {
     console.log(`You (${player}) Vs Computer (${computer})`);
 }
 
-game();
+//game();

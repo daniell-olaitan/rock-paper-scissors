@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
+        <header>
+            ROCK-PAPER-SCISSORS
+        </header>
+        <main>
+            <div class="info">
+                <h1 id="round">Round 1</h1>
+                <h2>Choose your weapon</h2>
+            </div>
+            <div id="container">
+                <div id="score">
+                    <h3>Computer</h3>
+                    <h1 id="comp-score">0</h1>
+                    <h3>Vs</h3>
+                    <h1 id="player-score">0</h1>
+                    <h3>You</h3>
+                </div>
+                <div id="game-area">
+                    <div class="avatar-wrap">
+                        <div class="avatar" id="rock-cmp">&#x270A;</div>
+                        <div class="avatar" id="scissors-cmp">&#x270C;</div>
+                        <div class="avatar" id="paper-cmp">&#x270B;</div>
+                    </div>
+                    <h1 class="info" id="result">Start!</h1>
+                    <div class="avatar-wrap">
+                        <button class="avatar-btn">
+                            <div class="avatar" id="rock-ply">&#x270A;</div>
+                        </button>
+                        <button class="avatar-btn">
+                            <div class="avatar" id="scissors-ply">&#x270C;</div>
+                        </button>
+                        <button class="avatar-btn">
+                            <div class="avatar" id="paper-ply">&#x270B;</div>
+                        </button>
+                    </div>
+                </div>
+                <aside id="ctrl">
+                    <button class="btn">Rules</button>
+                    <ul class="ctrl-btn">
+                        <li><button class="btn" id="pause">Pause</button></li>
+                        <li><button class="btn" id="new-game">New Game</button></li>
+                        <li><button class="btn" id="quit">Quit</button></li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <footer>
+            Developed by <a href="https://github.com/daniell-olaitan" rel="noopener noreferrer">devBOT</a>
+        </footer>    
         <script src="./scripts/script.js"></script> 
     </body>
 </html>
